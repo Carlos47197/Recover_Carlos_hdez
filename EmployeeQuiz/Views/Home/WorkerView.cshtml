@@ -1,0 +1,53 @@
+﻿@model EmployeeQuiz.Models.Employe
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+     <link rel="stylesheet" type="text/css" href="~/Content/Estilo.css" />
+    <title>WorkerView</title>
+</head>
+<body>
+    <div class="principal">
+
+        <div class="logo">
+            <center>
+    	  <img src="/Photos/JEFE.png" width="200" height="130" />
+    	</center>
+
+
+        </div>
+        <div class="contenido">
+            <center><label class="datos">Datos del empleado:</label></center><br />
+            <center>
+                
+        <img src="@Url.Content(Model.PhothoPath)" alt ="Sample Image" width="200" height="250" />
+        
+
+                <br />
+
+                <label class="datos2">
+        <br> <b>ID: </b>@Model.Id</br>
+
+         <b>NOMBRE: </b>@Model.Name
+
+        <br> <b>APELLIDOS: </b>@Model.FirstLastname @Model.SecondLastname</br>
+
+        <b>PUESTO: @Model.Position</b>
+                    
+       <br><b>SALARIO: $</b>@Model.Wage</br>
+
+         <b>SEXO: </b>@Model.Sex
+            </center>
+            </div>
+        </label>
+        <br /><center><a href="~/Home/Index"> <input type="submit" value="Volver a Buscar" /></a></label></center>
+        
+    </div>
+</body>
+</html>

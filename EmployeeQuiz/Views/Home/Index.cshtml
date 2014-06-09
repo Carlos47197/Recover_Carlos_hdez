@@ -1,0 +1,51 @@
+﻿@model EmployeeQuiz.Models.Employe
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Estilo.css" />
+    <title>Index</title>
+</head>
+<body>
+  
+    
+    
+    
+      <div class="principal">
+
+          <div class="logo">
+              <center>
+    	  <img src="/Photos/JEFE.png" width="255" height="162" />
+    	</center>
+
+          </div>
+          <div class="contenido">
+          <center>
+              <br />
+        @using (Html.BeginForm())
+        {
+            <span class="ti"> Ingresar el ID del empleado:</span>
+            <p>@Html.TextBoxFor(m=> m.Id)</p>
+            <input type="submit" value="Buscar Empleado" />
+            
+        }
+          </center>
+              </div>
+
+          <div class="creditos">
+              
+
+          </div>
+
+    </div>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+﻿body{
+	background-color: rgb(0,0,0);
+}
+.principal{
+	width: 1200px;
+	min-height: 650px;
+}
+.logo{
+	width: 1200px;
+	min-height: 150px;
+	background-image: none;
+	background-color: rgb(0,0,0);
+	background-repeat: repeat-x;
+	background-position: center center;
+}
+
+.contenido {
+    width: 1200px;
+    min-height: 400px;
+    background-color: rgb(0,0,0);
+}
+.creditos{
+	width: 1200px;
+	min-height: 50px;
+	background-color: rgb(0,0,0);
+}
+
+.ti{
+	color: rgb(51,153,255);
+	font-family: "Courier New", Courier, monospace;
+    font:900;
+	font-size: 24px;
+	text-align: left;
+    
+	}
+.boton {
+border-bottom:5px solid red;
+
+}
+
+.datos{
+	color: rgb(255, 255, 255);
+	font-family: "Courier New", Courier, monospace;
+    font:bold;
+	font-size: 24px;
+	text-align:center;
+    
+	}
+
+.datos2{
+	color: rgb(255, 255, 255);
+	font-family:'Times New Roman';
+	font-size: 14px;
+	text-align:center;
+    
+	}
